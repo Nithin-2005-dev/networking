@@ -1,3 +1,0 @@
-computer network:
-->it is the set of devices connected between them.
-->it can be as small as connection between two computers or as large as internet.
