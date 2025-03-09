@@ -1,0 +1,83 @@
+# 📌 Communication Technologies
+
+## 📡 Physical Media
+- **🛜 Optical Fibers**  
+- **📶 Coaxial Cables**  
+
+## 🌍 Wireless Technologies
+- **🔵 Bluetooth**  
+- **📡 Wi-Fi**  
+- **📱 3G**  
+- **📶 4G**  
+
+---
+
+# 📌 Mobile Network Generations
+
+### 1️⃣ 3G (Third Generation)
+✔ Introduced higher data speeds (up to a few Mbps).  
+✔ Enabled **mobile internet, video calls, and basic streaming**.  
+✔ Used technologies like **UMTS, HSPA, and CDMA2000**.  
+
+### 2️⃣ 4G (Fourth Generation)
+✔ Significantly faster (up to **1 Gbps** in ideal conditions).  
+✔ Supports **HD video streaming, online gaming, and VoLTE (Voice over LTE)**.  
+✔ Uses technologies like **LTE (Long-Term Evolution) and WiMAX**.  
+
+# 📌 Network Basics  
+
+## 🌐 Network Types  
+
+✔ **LAN (Local Area Network)** → Small house/office  
+✔ **MAN (Metropolitan Area Network)** → Across a city  
+✔ **WAN (Wide Area Network)** → Across countries  
+   - **SONET (Synchronous Optical Network)**  
+   - **Frame Relay**  
+
+---
+
+## 📡 Modem vs Router  
+
+✔ **Modem/Router** → Converts **digital signals into analog** and vice versa.  
+
+---
+
+# 📌 Network Topologies  
+
+## 1️⃣ **Bus Topology**  
+✔ All devices connected to a **single central cable**.  
+
+[Device1]----[Device2]----[Device3]----[Device4]
+
+
+2️⃣ Ring Topology
+✔ Devices connected in a circular structure.
+       [Device1] ---- [Device2]
+          |              |
+       [Device4] ---- [Device3]
+
+3️⃣ Star Topology
+✔ Devices connected to a central hub/switch.
+
+          [Device1]  
+             |  
+[Device2] -- [Hub] -- [Device3]  
+             |  
+          [Device4]  
+
+4️⃣ Tree Topology (Bus + Star)
+✔ Hierarchical structure combining Bus & Star topologies.
+
+          [Root Hub]  
+          /    |    \  
+      [Hub1] [Hub2] [Hub3]  
+      /   \     |      |  
+ [D1]   [D2]  [D3]   [D4]  
+
+5️⃣ Mesh Topology
+✔ Every device connects to every other device.
+
+       [D1] ----- [D2]
+        |  \      /  |
+        |   \    /   |
+       [D3] ----- [D4]
