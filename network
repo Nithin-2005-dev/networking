@@ -1,0 +1,77 @@
+# 📌 Structure of a Network
+
+## 🔹 Example: **Placing an Order on Amazon**
+
+   📦 Order Placed            ✅ Order Received            (Application Layer)
+   (User Interaction)         (Amazon's Server)
+         │                          │  
+         ▼                          ▼  
+      🏢 Amazon                 🏢 Amazon                 (Presentation + Session Layer)
+         │                          │  
+         ▼                          ▼  
+ 🚚 Delivery Company       🚚 Delivery Company        (Transport Layer - Ensures Data Transfer)
+         │                          │  
+         ▼                          ▼  
+ ✈️  Transported  <------->  Transported (India)    (Network Layer - Routing)
+         │                          │  
+         ▼                          ▼  
+ 🌐 Internet Backbone     🌐 Internet Backbone      (Data Link & Physical Layer)
+```
+
+---
+
+### **Layer Breakdown**
+✔ **Application Layer** → Order is placed via the Amazon website.  
+✔ **Presentation + Session Layer** → Amazon servers process and handle requests.  
+✔ **Transport Layer** → Ensures order details are reliably transmitted.  
+✔ **Network Layer** → Routes order information between locations.  
+✔ **Data Link & Physical Layer** → The actual physical transmission of data occurs.  
+
+
+
+📌 OSI Model
+
+## 1️⃣ Application Layer  
+- **Implemented in software.**  
+- Provides **network services directly to user applications** (e.g., web browsing, file transfer).  
+- Examples: HTTP, FTP, SMTP.
+
+## 2️⃣ Presentation Layer  
+- **Data encryption, compression, and abstraction.**  
+- Ensures data is in a readable format for the **Application Layer**.  
+- Examples: SSL, TLS, JPEG, MPEG.
+
+## 3️⃣ Session Layer  
+- **Sets up, manages, and terminates connections.**  
+- Ensures data transfer by establishing, maintaining, and terminating sessions.  
+- Examples: NetBIOS, RPC.
+
+## 4️⃣ Transport Layer  
+- **Responsible for reliable data transfer.**  
+- Manages **flow control, error detection, and correction**.  
+- Protocols: TCP (reliable), UDP (unreliable).
+
+## 5️⃣ Network Layer  
+- **Handles data routing, forwarding, and addressing.**  
+- Breaks down messages into **packets** and ensures they reach their destination.  
+- Protocols: IP, ICMP, RIP, OSPF.
+
+## 6️⃣ Data Link Layer  
+- **Provides node-to-node data transfer.**  
+- Handles **error detection and correction** within the physical network.  
+- Protocols: Ethernet, PPP, ARP.
+
+## 7️⃣ Physical Layer  
+- **Transmits raw bits over a physical medium.**  
+- Deals with **hardware components** like cables, switches, and radio signals.
+
+---
+
+🔥 **The OSI model provides a structured approach to how data is transmitted over a network.** 🚀  
+
+TCP/IP model:-
+application layer
+transport layer 
+network layer 
+data link 
+physical layer
