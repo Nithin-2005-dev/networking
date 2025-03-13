@@ -69,9 +69,32 @@
 
 🔥 **The OSI model provides a structured approach to how data is transmitted over a network.** 🚀  
 
-TCP/IP model:-
-application layer
-transport layer 
-network layer 
-data link 
-physical layer
+---
+
+# 📌 TCP/IP Model
+
+## 1️⃣ Application Layer  
+- Combines the functionalities of the **Application, Presentation, and Session layers** of the OSI model.  
+- Handles **high-level protocols, data representation, and session management**.  
+- Examples: HTTP, FTP, DNS, SMTP.
+
+## 2️⃣ Transport Layer  
+- Provides reliable communication through **segmentation, flow control, and error correction**.  
+- Protocols: TCP (reliable), UDP (unreliable).
+
+## 3️⃣ Network Layer  
+- Manages **packet routing, addressing, and forwarding**.  
+- Protocols: IP, ICMP.
+
+## 4️⃣ Data Link Layer  
+- Ensures **error-free transmission between adjacent nodes**.  
+- Handles **MAC addressing and framing**.  
+- Protocols: Ethernet, ARP.
+
+## 5️⃣ Physical Layer  
+- Deals with the **hardware transmission of raw bits over a physical medium**.  
+- Examples: Cables, switches, radio signals.
+
+---
+
+🔥 **Comparison:** While the OSI model has 7 layers, the TCP/IP model simplifies it into 5 layers by merging related functions. 🚀

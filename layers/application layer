@@ -1,0 +1,93 @@
+# 📌 Application Layer
+- **User Interaction:** Users interact through applications.
+- **Examples:** WhatsApp, Browsers, etc.
+- **Where:** On our devices.
+- **Protocols:** Define communication rules.
+
+---
+
+## 🌐 Client-Server Architecture
+```
+      +---------+                 +---------+
+      |  Client | --(Request)-->   |  Server |
+      |         | <--(Response)--  |         |
+      +---------+                 +---------+
+```
+
+---
+
+## 🌐 Peer-to-Peer Architecture
+```
+             Comp1
+           /       \
+        Comp2      Comp4
+           \       /
+            \     /
+             Comp3
+```
+
+📌 Protocols
+
+1. TCP/IP (Transmission Control Protocol/Internet Protocol)
+   - Standard protocol suite for reliable network communication.  
+
+2. HTTP (HyperText Transfer Protocol)
+   - Foundation of data exchange on the web.  
+
+3. DHCP (Dynamic Host Configuration Protocol)
+   - Automatically assigns IP addresses to devices.  
+
+4. FTP (File Transfer Protocol)
+   - Transfers files between computers.  
+
+5. SMTP (Simple Mail Transfer Protocol)
+   - Sends and transfers emails between servers.  
+
+6. POP3 & IMAP (Post Office Protocol & Internet Message Access Protocol)
+   - Retrieves emails from a server.  
+
+7. SSH (Secure Shell)
+   - Provides secure access to remote devices.  
+
+8. VNC (Virtual Network Computing)
+   - Allows remote control of another computer.  
+
+9. Telnet
+   - Provides insecure command-line access to remote devices.  
+
+10. UDP (User Datagram Protocol)
+   - Fast, connectionless communication; less reliable than TCP.  
+
+## 🌑 HTTP
+- Protocol Type: Stateless, Request-Response Model  
+- Transport Protocol: Uses TCP for reliable communication.  
+- HTTP Methods:  
+  - **GET:** Retrieve data from the server.  
+  - **POST:** Submit data to be processed by the server.  
+  - **DELETE:** Remove specified resources from the server.  
+  - **PUT:** Replace existing resources with new data.  
+  - **PATCH:** Partially modify existing resources.  
+
+---
+
+## 🌑 Cookies
+- Unique string, stored in any browser.
+
+---
+
+## 📧 How Email Works?
+- **SMTP (Simple Mail Transfer Protocol):** Sends the mail.  
+- **POP3 (Post Office Protocol):** Receives the mail.  
+- **IMAP (Internet Message Access Protocol):** Retrieves messages from the server while keeping them stored.  
+- **Process:**  
+  Sender -> Sender's SMTP Server -> Receiver's SMTP Server -> Receiver
+
+## 🌑 Domain Name System (DNS)
+**Definition**: A hierarchical system that translates human-readable domain names (e.g., www.example.com) into IP addresses.
+*Components:*
+**Domain Name**: The readable name (e.g., example.com).
+**IP Address**: The numerical address (e.g., 192.168.1.1).
+**DNS Resolver**: Translates domain names to IP addresses.
+**Root Servers**: Direct queries to appropriate TLD (Top-Level Domain) servers.
+**TLD Servers**: Handle domains like .com, .org, .net, etc.
+Authoritative Servers: Provide IP addresses for specific domains.
