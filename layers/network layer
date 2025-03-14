@@ -1,0 +1,68 @@
+->in transport layer the data is in segments
+->in network layer the data travels in the form of packets
+->in data link layer has frames
+
+Here we work with routers:-
+# 🌐 Network Layer
+
+         +-------------------------------+
+         |           Source Host         |
+         |           (Sender)            |
+         +-------------------------------+
+                      |
+                      v
+         +-------------------------------+
+         |      Routing & Forwarding     |
+         |    (Routers, Switches, etc.)  |
+         +-------------------------------+
+                      |
+                      v
+         +-------------------------------+
+         |          Destination Host     |
+         |           (Receiver)          |
+         +-------------------------------+
+
+                         [Router A]
+                        /           \
+               [Source]               [Router B]
+                        \           /        \
+                         [Router C]           [Router D]
+                              |                  |
+                              |                  |
+                           [Router E]        [Router F]
+                              \                 /
+                               \               /
+                                [Destination]
+
+control plane:-
+->used to build these routing tables.
+1)static routing
+->adding address manually
+2)dynamic routing
+
+internet protocol:-
+->ipv4-32 bit numbers with 4 words
+->ipv6-128 bits with 8 words
+
+🌑 Classes of IP Addresses (IPv4)
+
+| Class | Starting Range     | Ending Range         | Default Subnet Mask | Usage                               |
+|-------|--------------------|----------------------|---------------------|------------------------------------|
+| A     | 0.0.0.0            | 127.255.255.255      | 255.0.0.0           | Large networks (e.g., ISPs, big companies) |
+| B     | 128.0.0.0          | 191.255.255.255      | 255.255.0.0         | Medium-sized networks (e.g., universities, organizations) |
+| C     | 192.0.0.0          | 223.255.255.255      | 255.255.255.0       | Small networks (e.g., private businesses) |
+| D     | 224.0.0.0          | 239.255.255.255      | N/A                 | Multicasting (not for regular hosts) |
+| E     | 240.0.0.0          | 255.255.255.255      | N/A                 | Reserved for experimental purposes |
+
+
+🌑 Special Address Ranges:
+
+- Private Addresses:
+  - Class A: 10.0.0.0 – 10.255.255.255  
+  - Class B: 172.16.0.0 – 172.31.255.255  
+  - Class C: 192.168.0.0 – 192.168.255.255  
+
+- Loopback Address:
+  - 127.0.0.0 – 127.255.255.255 (Usually 127.0.0.1 for testing within the host computer)
+
+packets:header is of 20 bytes  
