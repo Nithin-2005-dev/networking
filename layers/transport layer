@@ -1,0 +1,50 @@
+# 📦 Data Transmission  
+Source (Message/File/Video Call) -> Transport Layer Multiplexer -> ........ -> Transport Layer Demultiplexer -> Destination (Message/File/Video Call)  
+
+- Data travels in packets.  
+- Transport layer attaches socket port numbers.  
+- Handles congestion control.  
+- Congestion control algorithms are built into TCP.  
+
+# ✅ Checksums  
+- Ensures data integrity by verifying checksums at destination.  
+Process:  
+  Computer (Data, Checksum) -> .... -> (Data, Checksum) Destiny  
+
+# ⏳ Timers  
+- Ensure timely delivery of data packets.  
+Example:  
+  (Timer) You (Data Packet) -> Friend  
+
+# 🌑 UDP (User Datagram Protocol)  
+- Data may not be delivered, can change, or may not be in order.  
+- Connectionless protocol.  
+- Uses checksums but does not correct errors.  
+
+UDP Packet Contains:  
+  1. Source Port Number (2 bytes)  
+  2. Destination Port Number (2 bytes)  
+  3. Length of Datagram  
+  4. Checksum  
+  5. Data  
+
+Use Cases:  
+- Fast data transfer.  
+- Video conferencing apps.  
+- DNS.  
+- Gaming.  
+
+# 🌑 TCP (Transmission Control Protocol)  
+- Transport layer protocol.  
+- Segments data, adds headers, maintains order, and provides congestion control.  
+- Ensures data reliability.  
+
+Features:  
+  1. Connection-oriented.  
+  2. Error control.  
+  3. Full duplex (bi-directional communication).  
+
+# 🤝 3-Way Handshake (TCP Connection Establishment)  
+    Client (SYN flag, Sequence Number) ------> Server  
+    Client <---- (ACK, Sequence Number) ------ Server  
+    Client (ACK, Sequence Number) ------> Server  
